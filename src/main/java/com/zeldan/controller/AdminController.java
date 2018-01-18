@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class AdminController {
 
-    @GetMapping("/admin")
+    @GetMapping("/api/admin")
     @PreAuthorize("hasAuthority('PRIVILEGE_ADMIN_READ')")
     public String admin() {
         return "admin can access this endpoint";

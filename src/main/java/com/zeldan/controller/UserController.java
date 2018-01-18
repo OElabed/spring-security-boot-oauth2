@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class UserController {
 
-    @GetMapping("/user")
+    @GetMapping("/api/user")
     @PreAuthorize("hasAuthority('PRIVILEGE_USER_READ')")
     public String user() {
         return "user can access this endpoint";
